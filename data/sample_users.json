@@ -1,0 +1,151 @@
+[
+  {
+    "email": "admin@organdonate.org",
+    "password": "Admin@123",
+    "first_name": "System",
+    "last_name": "Admin",
+    "phone": "+919876543210",
+    "role": "admin"
+  },
+  {
+    "email": "hospital1@aiims.edu",
+    "password": "Hospital@123",
+    "first_name": "AIIMS",
+    "last_name": "Delhi",
+    "phone": "+911126588500",
+    "role": "hospital",
+    "hospital": {
+      "name": "All India Institute of Medical Sciences",
+      "license_number": "DL-HOSP-001",
+      "address": "Ansari Nagar, New Delhi",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "is_transplant_center": true,
+      "latitude": 28.5672,
+      "longitude": 77.2100
+    }
+  },
+  {
+    "email": "bloodbank1@redcross.org",
+    "password": "BloodBank@123",
+    "first_name": "Red Cross",
+    "last_name": "Blood Bank",
+    "phone": "+911123456789",
+    "role": "blood_bank",
+    "blood_bank": {
+      "name": "Indian Red Cross Society Blood Bank",
+      "license_number": "DL-BB-001",
+      "address": "1 Red Cross Road",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "latitude": 28.6139,
+      "longitude": 77.2090
+    }
+  },
+  {
+    "email": "donor1@example.com",
+    "password": "Donor@123",
+    "first_name": "Rajesh",
+    "last_name": "Kumar",
+    "phone": "+919812345678",
+    "date_of_birth": "1985-05-15",
+    "gender": "male",
+    "role": "organ_donor",
+    "organ_donor": {
+      "blood_group": "O",
+      "rh_factor": "positive",
+      "donor_type": "living",
+      "organs": ["kidney", "liver"],
+      "latitude": 28.6292,
+      "longitude": 77.3848,
+      "city": "Noida",
+      "state": "Uttar Pradesh"
+    }
+  },
+  {
+    "email": "donor2@example.com",
+    "password": "Donor@123",
+    "first_name": "Priya",
+    "last_name": "Sharma",
+    "phone": "+919898765432",
+    "date_of_birth": "1990-08-22",
+    "gender": "female",
+    "role": "blood_donor",
+    "blood_donor": {
+      "blood_group": "A",
+      "rh_factor": "positive",
+      "weight_kg": 58,
+      "hemoglobin_level": 13.5,
+      "latitude": 28.4595,
+      "longitude": 77.0266,
+      "city": "Gurgaon",
+      "state": "Haryana"
+    }
+  },
+  {
+    "email": "donor3@example.com",
+    "password": "Donor@123",
+    "first_name": "Amit",
+    "last_name": "Patel",
+    "phone": "+919876123456",
+    "date_of_birth": "1978-03-10",
+    "gender": "male",
+    "role": "organ_donor",
+    "organ_donor": {
+      "blood_group": "B",
+      "rh_factor": "negative",
+      "donor_type": "living",
+      "organs": ["kidney"],
+      "hla_type": "A2,A24,B35,B44,DR4,DR7",
+      "latitude": 19.0760,
+      "longitude": 72.8777,
+      "city": "Mumbai",
+      "state": "Maharashtra"
+    }
+  },
+  {
+    "email": "recipient1@example.com",
+    "password": "Patient@123",
+    "first_name": "Sunita",
+    "last_name": "Devi",
+    "phone": "+919765432100",
+    "date_of_birth": "1975-11-05",
+    "gender": "female",
+    "role": "recipient",
+    "recipient": {
+      "required_type": "organ",
+      "blood_group": "O",
+      "rh_factor": "positive",
+      "organ_needed": "kidney",
+      "urgency_score": 8,
+      "medical_condition": "End-stage renal disease",
+      "hla_type": "A2,A3,B35,B51,DR4,DR11",
+      "latitude": 28.5355,
+      "longitude": 77.3910,
+      "city": "Noida",
+      "state": "Uttar Pradesh"
+    }
+  },
+  {
+    "email": "recipient2@example.com",
+    "password": "Patient@123",
+    "first_name": "Mohammed",
+    "last_name": "Khan",
+    "phone": "+919654321098",
+    "date_of_birth": "1982-07-20",
+    "gender": "male",
+    "role": "recipient",
+    "recipient": {
+      "required_type": "blood",
+      "blood_group": "AB",
+      "rh_factor": "positive",
+      "units_needed": 3,
+      "urgency_score": 6,
+      "medical_condition": "Scheduled surgery",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "city": "Bangalore",
+      "state": "Karnataka"
+    }
+  }
+]

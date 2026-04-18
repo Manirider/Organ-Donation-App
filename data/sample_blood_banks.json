@@ -1,0 +1,202 @@
+[
+    {
+        "name": "Indian Red Cross Society Blood Bank",
+        "license_number": "DL-BB-001",
+        "address": "1 Red Cross Road",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "postal_code": "110001",
+        "phone": "+911123711551",
+        "email": "bloodbank@indianredcross.org",
+        "latitude": 28.6139,
+        "longitude": 77.2090,
+        "inventory": [
+            {
+                "blood_group": "O",
+                "rh_factor": "positive",
+                "units": 45
+            },
+            {
+                "blood_group": "O",
+                "rh_factor": "negative",
+                "units": 12
+            },
+            {
+                "blood_group": "A",
+                "rh_factor": "positive",
+                "units": 38
+            },
+            {
+                "blood_group": "A",
+                "rh_factor": "negative",
+                "units": 8
+            },
+            {
+                "blood_group": "B",
+                "rh_factor": "positive",
+                "units": 35
+            },
+            {
+                "blood_group": "B",
+                "rh_factor": "negative",
+                "units": 6
+            },
+            {
+                "blood_group": "AB",
+                "rh_factor": "positive",
+                "units": 15
+            },
+            {
+                "blood_group": "AB",
+                "rh_factor": "negative",
+                "units": 3
+            }
+        ]
+    },
+    {
+        "name": "Rotary Blood Bank",
+        "license_number": "DL-BB-002",
+        "address": "56-57, Tughlakabad Institutional Area",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "postal_code": "110062",
+        "phone": "+911126965050",
+        "email": "info@rotarybloodbank.org",
+        "latitude": 28.5037,
+        "longitude": 77.2512,
+        "inventory": [
+            {
+                "blood_group": "O",
+                "rh_factor": "positive",
+                "units": 52
+            },
+            {
+                "blood_group": "O",
+                "rh_factor": "negative",
+                "units": 15
+            },
+            {
+                "blood_group": "A",
+                "rh_factor": "positive",
+                "units": 40
+            },
+            {
+                "blood_group": "A",
+                "rh_factor": "negative",
+                "units": 10
+            },
+            {
+                "blood_group": "B",
+                "rh_factor": "positive",
+                "units": 42
+            },
+            {
+                "blood_group": "B",
+                "rh_factor": "negative",
+                "units": 8
+            },
+            {
+                "blood_group": "AB",
+                "rh_factor": "positive",
+                "units": 18
+            },
+            {
+                "blood_group": "AB",
+                "rh_factor": "negative",
+                "units": 4
+            }
+        ]
+    },
+    {
+        "name": "Prathama Blood Centre",
+        "license_number": "GJ-BB-001",
+        "address": "Nehru Bridge Corner, Ashram Road",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "country": "India",
+        "postal_code": "380009",
+        "phone": "+917926577621",
+        "email": "info@prathama.org",
+        "latitude": 23.0339,
+        "longitude": 72.5850,
+        "inventory": [
+            {
+                "blood_group": "O",
+                "rh_factor": "positive",
+                "units": 60
+            },
+            {
+                "blood_group": "O",
+                "rh_factor": "negative",
+                "units": 18
+            },
+            {
+                "blood_group": "A",
+                "rh_factor": "positive",
+                "units": 45
+            },
+            {
+                "blood_group": "B",
+                "rh_factor": "positive",
+                "units": 50
+            }
+        ]
+    },
+    {
+        "name": "Tata Memorial Blood Bank",
+        "license_number": "MH-BB-001",
+        "address": "Dr. E Borges Road, Parel",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "postal_code": "400012",
+        "phone": "+912224177000",
+        "email": "bloodbank@tmc.gov.in",
+        "latitude": 19.0048,
+        "longitude": 72.8435,
+        "inventory": [
+            {
+                "blood_group": "O",
+                "rh_factor": "positive",
+                "units": 75
+            },
+            {
+                "blood_group": "O",
+                "rh_factor": "negative",
+                "units": 20
+            },
+            {
+                "blood_group": "A",
+                "rh_factor": "positive",
+                "units": 55
+            },
+            {
+                "blood_group": "A",
+                "rh_factor": "negative",
+                "units": 12
+            },
+            {
+                "blood_group": "B",
+                "rh_factor": "positive",
+                "units": 48
+            },
+            {
+                "blood_group": "B",
+                "rh_factor": "negative",
+                "units": 9
+            },
+            {
+                "blood_group": "AB",
+                "rh_factor": "positive",
+                "units": 22
+            },
+            {
+                "blood_group": "AB",
+                "rh_factor": "negative",
+                "units": 5
+            }
+        ]
+    }
+]

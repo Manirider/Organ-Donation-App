@@ -1,0 +1,10 @@
+export { default as Dashboard } from './Dashboard';
+export { default as Login } from './Login';
+export { default as OrganDonors } from './OrganDonors';
+export { default as BloodDonors } from './BloodDonors';
+export { default as Recipients } from './Recipients';
+export { default as Hospitals } from './Hospitals';
+export { default as BloodBanks } from './BloodBanks';
+export { default as Matching } from './Matching';
+export { default as AuditLogs } from './AuditLogs';
+export { default as Settings } from './Settings';

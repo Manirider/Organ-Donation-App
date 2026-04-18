@@ -1,0 +1,116 @@
+[
+    {
+        "name": "All India Institute of Medical Sciences",
+        "license_number": "DL-HOSP-001",
+        "address": "Ansari Nagar, New Delhi",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "postal_code": "110029",
+        "phone": "+911126588500",
+        "email": "contact@aiims.edu",
+        "emergency_phone": "+911126588700",
+        "is_transplant_center": true,
+        "bed_capacity": 2500,
+        "icu_beds": 200,
+        "readiness_score": 0.95,
+        "transplant_capabilities": {
+            "kidney": true,
+            "liver": true,
+            "heart": true,
+            "lung": true,
+            "cornea": true
+        },
+        "latitude": 28.5672,
+        "longitude": 77.2100
+    },
+    {
+        "name": "Apollo Hospitals",
+        "license_number": "TN-HOSP-001",
+        "address": "21 Greams Lane, Off Greams Road",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "postal_code": "600006",
+        "phone": "+914428290200",
+        "email": "contact@apollohospitals.com",
+        "is_transplant_center": true,
+        "bed_capacity": 700,
+        "icu_beds": 100,
+        "readiness_score": 0.92,
+        "transplant_capabilities": {
+            "kidney": true,
+            "liver": true,
+            "heart": true
+        },
+        "latitude": 13.0569,
+        "longitude": 80.2425
+    },
+    {
+        "name": "Medanta - The Medicity",
+        "license_number": "HR-HOSP-001",
+        "address": "CH Baktawar Singh Road, Sector 38",
+        "city": "Gurgaon",
+        "state": "Haryana",
+        "country": "India",
+        "postal_code": "122001",
+        "phone": "+911244141414",
+        "email": "contact@medanta.org",
+        "is_transplant_center": true,
+        "bed_capacity": 1600,
+        "icu_beds": 350,
+        "readiness_score": 0.94,
+        "transplant_capabilities": {
+            "kidney": true,
+            "liver": true,
+            "heart": true,
+            "lung": true
+        },
+        "latitude": 28.4231,
+        "longitude": 77.0423
+    },
+    {
+        "name": "Kokilaben Dhirubhai Ambani Hospital",
+        "license_number": "MH-HOSP-001",
+        "address": "Rao Saheb Achutrao Patwardhan Marg",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India",
+        "postal_code": "400053",
+        "phone": "+912230999999",
+        "email": "info@kokilabenhospital.com",
+        "is_transplant_center": true,
+        "bed_capacity": 750,
+        "icu_beds": 120,
+        "readiness_score": 0.91,
+        "transplant_capabilities": {
+            "kidney": true,
+            "liver": true,
+            "bone_marrow": true
+        },
+        "latitude": 19.1196,
+        "longitude": 72.8274
+    },
+    {
+        "name": "Narayana Health City",
+        "license_number": "KA-HOSP-001",
+        "address": "258/A, Bommasandra Industrial Area",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "country": "India",
+        "postal_code": "560099",
+        "phone": "+918066505050",
+        "email": "contact@narayanahealth.org",
+        "is_transplant_center": true,
+        "bed_capacity": 3000,
+        "icu_beds": 280,
+        "readiness_score": 0.93,
+        "transplant_capabilities": {
+            "kidney": true,
+            "heart": true,
+            "lung": true
+        },
+        "latitude": 12.8124,
+        "longitude": 77.6698
+    }
+]

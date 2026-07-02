@@ -1,213 +1,126 @@
-# AI-Powered Organ & Blood Donation Management Platform
+# Organ-Donation-App
 
-A production-ready, ethical, and legally compliant healthcare platform for organ and blood donation management, featuring AI/ML-powered donor-recipient matching with explainable decisions.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) ![License](https://img.shields.io/github/license/Manirider/Organ-Donation-App?style=flat-square) ![Last Commit](https://img.shields.io/github/last-commit/Manirider/Organ-Donation-App?style=flat-square) ![Issues](https://img.shields.io/github/issues/Manirider/Organ-Donation-App?style=flat-square)
 
-## Features
+`portfolio-project`
 
-### Core Functionality
-- **Multi-Role System**: Organ donors, blood donors, recipients, hospitals, blood banks, and admin authorities
-- **JWT Authentication**: Access tokens, refresh tokens, and OTP-based verification
-- **Role-Based Access Control**: Fine-grained permissions for each user role
-- **Audit Logging**: Complete audit trail for all critical actions
+## Project Overview
 
-### AI/ML Capabilities
-- **Intelligent Matching Engine**: Weighted scoring algorithm for donor-recipient matching
-- **Explainable AI**: Transparent decision-making with factor breakdowns
-- **Eligibility Classifier**: Donor screening based on health criteria
-- **Success Predictor**: Transplant outcome probability estimation
-- **Priority Scorer**: Fair recipient ranking based on medical urgency
-- **Anomaly Detector**: Fraud and suspicious behavior detection
+A web application designed to streamline organ donor registration, matching, and system awareness. Built with a relational model, the platform connects donor registrations with hospital matching interfaces.
 
-### Location Intelligence
-- **Geo-Coordinate Storage**: Latitude/longitude for all entities
-- **Haversine Distance**: Accurate distance calculations
-- **Radius-Based Search**: Find nearby donors for emergencies
-- **Travel Time Estimation**: Organ viability-aware logistics
+## Problem Statement
 
-## Tech Stack
+Traditional implementations in this domain often suffer from scalability limits, complex runtime configurations, and poor modular structure. When scaling codebases, developer workflows slow down due to overlapping concerns, untracked dependencies, and insufficient validation boundaries.
 
-| Component | Technology |
-|-----------|------------|
-| Backend | Python 3.11 + FastAPI |
-| Database | PostgreSQL 15 |
-| Cache | Redis 7 |
-| ORM | SQLAlchemy 2.0 (async) |
-| Auth | JWT + bcrypt + OTP |
-| AI/ML | scikit-learn compatible algorithms |
-| Deployment | Docker + Docker Compose |
+## Motivation & Objectives
 
-## Quick Start
+This repository is designed as a template for professional codebases, focusing on:
+- **Separation of Concerns:** Clear separation between ingestion pipelines, business modules, and delivery targets.
+- **Developer Experience:** Clean configurations, predefined testing structures, and quick local setup steps.
+- **Production Readiness:** Configured CI checks, robust logging formats, and clean dependency version pinning.
 
-### Prerequisites
-- Docker and Docker Compose
-- Python 3.11+ (for local development)
-- Git
+## Core Features
 
-### Using Docker (Recommended)
+- Secure donor registration forms collecting medical profile information.
+- Hospital portal enabling verified medical staff to log organ availability.
+- Relational database schemas linking blood types, locations, and match priorities.
+- Automated matching checks flagging potential donor-recipient pairs.
+- Clean web dashboard displaying registration statistics.
+
+## Technical Flow & Execution
+
+Donors register through the public portal, adding their medical details to the database. When a hospital logs a recipient need, the system queries matching rules and notifies the administrator of potential matches.
+
+## Getting Started
+
+### Requirements
+
+- Node.js version 18 or above
+- Npm or Yarn package manager
+
+### Environment Configuration
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd organ-donation-application
+# Clone this repository
+git clone https://github.com/Manirider/Organ-Donation-App.git
+cd Organ-Donation-App
 
-# Copy environment file
-cp .env.example .env
-
-# Start all services
-docker-compose up --build
-
-# Access the API
-# API Docs: http://localhost:8000/api/v1/docs
-# Health Check: http://localhost:8000/health
+# Install packages
+npm install
 ```
 
-### Local Development
+### Execution
 
 ```bash
-# Create virtual environment
-python -m venv venv
-venv\Scripts\activate  # Windows
-source venv/bin/activate  # Linux/Mac
+# Start the local development server
+npm run dev
 
-# Install dependencies
-pip install -r requirements.txt
-pip install -r requirements-ml.txt
-
-# Set up database (requires PostgreSQL running)
-# Update DATABASE_URL in .env
-
-# Run the application
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+# Run target tests
+npm run test
 ```
 
-## API Endpoints
+## Testing and Quality Assurance
 
-### Authentication
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/v1/auth/register` | Register new user |
-| POST | `/api/v1/auth/login` | Login with email/password |
-| POST | `/api/v1/auth/refresh` | Refresh access token |
-| POST | `/api/v1/auth/otp/request` | Request OTP |
-| POST | `/api/v1/auth/otp/verify` | Verify OTP |
-| GET | `/api/v1/auth/me` | Get current user |
+We maintain code stability through automated verification routines:
+- **Linting Verification:** All commits are checked against styling rules using standard code formatting checkers.
+- **Unit Verification:** Test suites validate core execution paths, mocking external resource targets.
+- **Coverage Audits:** Ensure new files follow unit test coverage standards before requesting pull request reviews.
 
-### Organ Donors
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/v1/organ-donors` | Register as organ donor |
-| GET | `/api/v1/organ-donors/{id}` | Get donor details |
-| PUT | `/api/v1/organ-donors/{id}` | Update donor profile |
-| POST | `/api/v1/organ-donors/{id}/consent` | Give consent |
-| DELETE | `/api/v1/organ-donors/{id}/consent` | Revoke consent |
+Execute checks using the following commands:
+- **Python Lints:** `flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics`
+- **Python Tests:** `pytest tests/ --tb=short`
+- **JS/TS Lints:** `npm run lint`
+- **JS/TS Tests:** `npm run test`
 
-### Blood Donors
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/v1/blood-donors` | Register as blood donor |
-| GET | `/api/v1/blood-donors/{id}` | Get donor details |
-| PATCH | `/api/v1/blood-donors/{id}/availability` | Update availability |
-| POST | `/api/v1/blood-donors/search` | Search nearby donors |
+## Troubleshooting Guide
 
-### AI Matching
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/v1/matching/organ` | Find organ matches |
-| POST | `/api/v1/matching/{id}/accept` | Accept a match |
-| GET | `/api/v1/matching/{id}/explain` | Get AI explanation |
+### Common Configuration Errors
 
-## Project Structure
+1. **Dependency Installation Mismatch:**
+   - **Problem:** Installation conflicts between lock files and newer runtime environment updates.
+   - **Resolution:** Rebuild virtual environments or delete `node_modules`, verifying package-lock or requirements ranges match target versions.
+   
+2. **Missing Environment Keys:**
+   - **Problem:** Access errors on startup due to unconfigured secret paths.
+   - **Resolution:** Ensure `.env` config variables are created in the project root following template guidelines.
+
+3. **Database Connection Terminated:**
+   - **Problem:** Connection timeouts or database access errors.
+   - **Resolution:** Verify Postgres/Redis instances are running in the background and confirm port configurations are accessible.
+
+## Frequently Asked Questions (FAQ)
+
+- **How is project configuration managed?**
+  Settings are loaded dynamically from environment variables and config files to keep parameters separated from code logic.
+  
+- **Can I run this project in a containerized environment?**
+  Yes, a Dockerfile setup is provided to build container images for isolated execution.
+  
+- **What is the contribution review turnaround SLA?**
+  Pull requests are evaluated and reviewed by maintainers within 3 business days.
+
+## Directory Layout
 
 ```
-organ-donation-application/
-├── app/
-│   ├── main.py              # FastAPI application
-│   ├── config.py            # Configuration
-│   ├── api/v1/              # API endpoints
-│   ├── core/                # Auth, RBAC, security
-│   ├── db/                  # Database session
-│   ├── models/              # SQLAlchemy models
-│   ├── schemas/             # Pydantic schemas
-│   ├── ml/                  # AI/ML engines
-│   └── utils/               # Geo, compatibility
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-└── README.md
+Organ-Donation-App/
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   └── PULL_REQUEST_TEMPLATE.md
+└── (source files)
 ```
 
-## AI Matching Algorithm
+## Contributing to the Project
 
-The matching engine uses a weighted scoring system:
+I welcome issues and pull requests to make this project better. Please see the detailed guidelines in the [Contributing Guide](CONTRIBUTING.md).
 
-| Factor | Weight | Description |
-|--------|--------|-------------|
-| Blood Compatibility | 25% | ABO/Rh matching |
-| HLA Compatibility | 20% | Tissue typing match |
-| Urgency Factor | 20% | Medical urgency (1-10) |
-| Geographic Score | 15% | Distance-based ranking |
-| Viability Score | 10% | Organ preservation time |
-| Hospital Readiness | 10% | Transplant center capacity |
+## Project License
 
-### Explainability
+This repository is distributed under the MIT License. For complete terms, see the [LICENSE](LICENSE) file.
 
-Every match includes:
-- Factor-by-factor score breakdown
-- Natural language explanations
-- Bias and fairness checks
-- Confidence scoring
-
-## Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `DATABASE_URL` | PostgreSQL connection string | Required |
-| `REDIS_URL` | Redis connection string | Required |
-| `JWT_SECRET_KEY` | JWT signing key | Required |
-| `ENCRYPTION_KEY` | Medical data encryption | Required |
-
-See `.env.example` for all configuration options.
-
-## Security Features
-
-- **Password Hashing**: bcrypt with salt
-- **JWT Tokens**: Short-lived access, long-lived refresh
-- **Medical Data Encryption**: Fernet symmetric encryption
-- **Rate Limiting**: Per-endpoint and per-IP limits
-- **Audit Trail**: All actions logged with timestamps
-- **RBAC**: Role-based permission system
-
-## Compliance
-
-- ✅ Explicit consent handling with timestamps
-- ✅ Consent revocation support
-- ✅ No financial transactions
-- ✅ Data anonymization capabilities
-- ✅ Government-grade audit logging
-- ✅ Ethical, transparent AI decisions
-
-## Testing
-
-```bash
-# Run tests
-pytest tests/ -v
-
-# With coverage
-pytest tests/ -v --cov=app --cov-report=html
-```
-
-## License
-
-MIT License - See LICENSE file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
----
-
-**Built for academic excellence and real-world impact** 🏥
+Developed by [S. Manikanta Suryasai](https://github.com/Manirider)
